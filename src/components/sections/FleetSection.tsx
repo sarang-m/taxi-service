@@ -7,7 +7,7 @@ const vehicles = [
     name: "Spacious SUVs",
     description: "Ideal for families or groups with extra luggage, providing ample space and comfort.",
     //imgSrc: "https://placehold.co/600x400.png",
-    imgSrc: "/taxi-car.jpg",
+    imgSrc: "/taxi-car.webp",
     alt: "SUV taxi in Collingwood",
     dataAiHint: "SUV car"
   },

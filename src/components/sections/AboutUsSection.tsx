@@ -16,7 +16,7 @@ export default function AboutUsSection() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <Image
-              src="/regal-taxi.jpg"
+              src="/regal-taxi.webp"
               alt="Friendly taxi driver in Collingwood or Wasaga Beach"
               width={600}
               height={400}
