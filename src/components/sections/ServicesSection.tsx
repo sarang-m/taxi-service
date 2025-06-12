@@ -3,29 +3,29 @@ import { Navigation, Plane, Briefcase, Mountain, Star } from "lucide-react";
 
 const services = [
   {
-    icon: <Navigation className="h-10 w-10 text-accent" />,
+    icon: <Navigation className="h-10 w-10 text-primary" />,
     title: "Local Rides",
-    description: "Quick and reliable taxi service for all your local travel needs within Collingwood. Whether it's shopping, appointments, or a night out, your Collingwood cab is here.",
+    description: "Quick and reliable taxi service for all your local travel needs within Collingwood, Wasaga Beach, and nearby communities. Whether it's shopping, appointments, or a night out, your cab is here.",
   },
   {
-    icon: <Plane className="h-10 w-10 text-accent" />,
+    icon: <Plane className="h-10 w-10 text-primary" />,
     title: "Airport Transfers",
-    description: "Stress-free airport taxi to and from Toronto Pearson Airport (YYZ), Billy Bishop Toronto City Airport (YTZ), and other regional airports. Pre-book your airport cab in Collingwood for peace of mind.",
+    description: "Stress-free airport taxi to and from Toronto Pearson Airport (YYZ), Billy Bishop Toronto City Airport (YTZ), and other regional airports. Pre-book your airport cab from Collingwood or Wasaga Beach for peace of mind.",
   },
   {
-    icon: <Mountain className="h-10 w-10 text-accent" />,
+    icon: <Mountain className="h-10 w-10 text-primary" />,
     title: "Blue Mountain & Resort Taxi",
-    description: "Convenient taxi services to Blue Mountain Resort, Wasaga Beach, and other local attractions. Enjoy your vacation with our reliable Blue Mountain taxi.",
+    description: "Convenient taxi services to Blue Mountain Resort, Wasaga Beach, and other local attractions. Enjoy your vacation with our reliable Blue Mountain and Wasaga Beach taxi.",
   },
   {
-    icon: <Briefcase className="h-10 w-10 text-accent" />,
+    icon: <Briefcase className="h-10 w-10 text-primary" />,
     title: "Corporate Travel",
-    description: "Professional and discreet transportation for business meetings, corporate events, and executive travel. Impress your clients with our premium service.",
+    description: "Professional and discreet transportation for business meetings, corporate events, and executive travel in Collingwood, Wasaga Beach and surrounding areas. Impress your clients with our premium service.",
   },
   {
-    icon: <Star className="h-10 w-10 text-accent" />,
+    icon: <Star className="h-10 w-10 text-primary" />,
     title: "Long-Distance Rides",
-    description: "Comfortable and safe long-distance taxi services to any destination. Contact us for custom quotes for out-of-town trips.",
+    description: "Comfortable and safe long-distance taxi services to any destination from Collingwood or Wasaga Beach. Contact us for custom quotes for out-of-town trips.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function ServicesSection() {
             Our Comprehensive Taxi Services
           </h2>
           <p className="mt-4 text-lg text-foreground/80 max-w-2xl mx-auto">
-            Whatever your transportation needs, Collingwood Regal Taxi has you covered.
+            Whatever your transportation needs in Collingwood, Wasaga Beach, and the surrounding areas, Collingwood Regal Taxi has you covered.
           </p>
         </div>
 

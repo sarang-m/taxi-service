@@ -8,23 +8,13 @@ export default function HeroSection() {
 
   return (
     <section id="hero" className="relative py-20 md:py-32 bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-primary-foreground">
-      <div className="absolute inset-0 opacity-20">
-        <Image 
-          src="https://placehold.co/1920x1080.png" 
-          alt="Scenic view of Collingwood"
-          fill
-          className="object-cover"
-          quality={75}
-          priority
-          data-ai-hint="Collingwood landscape"
-        />
-      </div>
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <h1 className="text-4xl font-headline font-extrabold tracking-tight text-primary-foreground sm:text-5xl md:text-6xl drop-shadow-md">
-          Your Trusted Taxi Service in Collingwood
+          Your trusted taxi service in Collingwood and Wasaga Beach
         </h1>
         <p className="mt-6 max-w-2xl mx-auto text-lg text-primary-foreground/90 sm:text-xl md:text-2xl">
-          Fast, reliable, and friendly rides anytime, anywhere in Collingwood and surrounding areas.
+          Fast, reliable, and friendly rides anytime, anywhere in Collingwood, Wasaga Beach, and surrounding areas.
         </p>
         <div className="mt-10">
           <Button
@@ -38,9 +28,9 @@ export default function HeroSection() {
             </a>
           </Button>
         </div>
-        <div className="mt-8 flex items-center justify-center gap-2 text-md text-primary-foreground/80">
+        <div className="mt-8 flex items-center justify-center gap-2 text-md">
           <Award className="h-6 w-6 text-yellow-400" />
-          <span>Trusted by <strong>10,000+</strong> riders in Collingwood</span>
+          <span className="text-primary-foreground/90">Trusted by <strong>10,000+</strong> riders in Collingwood & Wasaga Beach</span>
         </div>
       </div>
     </section>

@@ -1,12 +1,12 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { DollarSign, MapPin } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { MapPin } from "lucide-react";
 
-const typicalRoutes = [
-  { from: "Downtown Collingwood", to: "Blue Mountain Village", estimate: "$25 - $35" },
-  { from: "Collingwood", to: "Wasaga Beach (Main St)", estimate: "$30 - $40" },
-  { from: "Collingwood", to: "Thornbury", estimate: "$25 - $35" },
-  { from: "Collingwood", to: "Stayner", estimate: "$30 - $40" },
-  { from: "Collingwood", to: "Toronto Pearson Airport (YYZ)", estimate: "$200 - $250 (Pre-book for best rates)" },
+const commonRoutes = [
+  { from: "Downtown Collingwood", to: "Blue Mountain Village" },
+  { from: "Collingwood", to: "Wasaga Beach (Main St)" },
+  { from: "Collingwood", to: "Thornbury" },
+  { from: "Collingwood", to: "Stayner" },
+  { from: "Collingwood", to: "Toronto Pearson Airport (YYZ)" },
 ];
 
 export default function PricingSection() {
@@ -18,32 +18,25 @@ export default function PricingSection() {
             Transparent Pricing
           </h2>
           <p className="mt-4 text-lg text-foreground/80 max-w-2xl mx-auto">
-            Affordable rates for common routes. For specific quotes, please call us.
+            Offering flat rate in local or long distance ride.
           </p>
         </div>
 
         <Card className="max-w-3xl mx-auto shadow-xl bg-card">
-          <CardHeader className="text-center">
-            <CardTitle className="text-2xl font-headline text-primary">Typical Fare Estimates</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="space-y-4">
-              {typicalRoutes.map((route, index) => (
-                <li key={index} className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 border-b border-border last:border-b-0 hover:bg-muted/50 rounded-md transition-colors">
-                  <div className="flex items-center mb-2 sm:mb-0">
-                    <MapPin className="h-5 w-5 text-primary mr-3 shrink-0" />
-                    <span className="font-medium text-foreground">
-                      {route.from} <span className="text-foreground/70 mx-1">to</span> {route.to}
-                    </span>
-                  </div>
-                  <span className="font-semibold text-accent text-lg sm:text-right whitespace-nowrap">
-                    {route.estimate}
+          <CardContent className="pt-6">
+            <h3 className="text-xl font-headline font-semibold text-primary mb-6 text-center">Common Routes We Serve</h3>
+            <ul className="space-y-3">
+              {commonRoutes.map((route, index) => (
+                <li key={index} className="flex items-center p-3 border-b border-border last:border-b-0 hover:bg-muted/50 rounded-md transition-colors">
+                  <MapPin className="h-5 w-5 text-primary mr-3 shrink-0" />
+                  <span className="font-medium text-foreground">
+                    {route.from} <span className="text-foreground/70 mx-1">to</span> {route.to}
                   </span>
                 </li>
               ))}
             </ul>
             <p className="mt-8 text-center text-foreground/80 text-sm">
-              *Estimates are subject to traffic, weather conditions, and specific pickup/drop-off locations. Tolls and airport fees may apply. Please call <a href="tel:+17053510000" className="font-semibold text-accent hover:underline">+1 705-351-0000</a> for precise quotes.
+              *Estimates are subject to traffic, weather conditions, and specific pickup/drop-off locations. Tolls and airport fees may apply. Please call <a href="tel:+17053510000" className="font-semibold text-accent hover:underline">+1 705-351-0000</a> for precise quotes and flat rates.
             </p>
           </CardContent>
         </Card>

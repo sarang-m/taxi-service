@@ -7,7 +7,7 @@ const navItems = [
   { href: '#about-us', label: 'About Us' },
   { href: '#services', label: 'Services' },
   { href: '#fleet', label: 'Our Fleet' },
-  { href: '#pricing', label: 'Pricing' },
+  { href: '#pricing', label: 'Routes' },
   { href: '#testimonials', label: 'Testimonials' },
   { href: '#contact', label: 'Contact Us' },
 ];
@@ -40,7 +40,6 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] bg-card p-6">
               <div className="mb-6 flex items-center gap-2 text-xl font-bold font-headline text-primary">
-                <Car className="h-7 w-7" />
                 Collingwood Regal Taxi
               </div>
               <nav className="flex flex-col gap-3">

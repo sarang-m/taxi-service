@@ -6,15 +6,15 @@ const WEBSITE_URL = 'https://www.collingwoodregaltaxi.ca'; // Replace with actua
 
 export const metadata: Metadata = {
   metadataBase: new URL(WEBSITE_URL),
-  title: 'Collingwood Regal Taxi | 24/7 Taxi Service in Collingwood – Local & Airport Cabs',
-  description: 'Looking for a taxi in Collingwood? Call +1 705-351-0000 to book fast, affordable rides with Collingwood Regal Taxi. Local, airport & outstation taxis available 24/7.',
-  keywords: ['taxi Collingwood', 'cab in Collingwood', 'airport taxi Collingwood', '24/7 taxi Collingwood', 'Collingwood Regal Taxi'],
+  title: 'Collingwood Regal Taxi | Taxi Service in Collingwood & Wasaga Beach – Local & Airport Cabs',
+  description: "Looking for a taxi in Collingwood or Wasaga Beach? Call +1 705-351-0000 to book fast, affordable rides with Collingwood Regal Taxi. Local, airport & outstation taxis available for Collingwood, Wasaga Beach, and surrounding areas.",
+  keywords: ['taxi Collingwood', 'taxi Wasaga Beach', 'cab in Collingwood', 'cab in Wasaga Beach', 'airport taxi Collingwood', 'airport taxi Wasaga Beach', 'Collingwood Regal Taxi', 'Wasaga Beach taxi service', 'taxi near me Wasaga Beach', 'taxi near me Collingwood'],
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Collingwood Regal Taxi | 24/7 Taxi Service in Collingwood',
-    description: 'Fast, reliable, and affordable taxi services in Collingwood, Ontario. Airport transfers, local rides, and more. Call +1 705-351-0000.',
+    title: 'Collingwood Regal Taxi | Taxi Service in Collingwood & Wasaga Beach',
+    description: 'Fast, reliable, and affordable taxi services in Collingwood, Wasaga Beach, and surrounding Ontario areas. Airport transfers, local rides, and more. Call +1 705-351-0000.',
     url: WEBSITE_URL,
     siteName: 'Collingwood Regal Taxi',
     images: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: `${WEBSITE_URL}/og-image.png`, // Replace with actual OG image URL
         width: 1200,
         height: 630,
-        alt: 'Collingwood Regal Taxi Service',
+        alt: 'Collingwood Regal Taxi Service for Collingwood and Wasaga Beach',
       },
     ],
     locale: 'en_CA',
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Collingwood Regal Taxi | 24/7 Taxi Service in Collingwood',
-    description: 'Fast, reliable, and affordable taxi services in Collingwood, Ontario. Airport transfers, local rides, and more. Call +1 705-351-0000.',
+    title: 'Collingwood Regal Taxi | Taxi Service in Collingwood & Wasaga Beach',
+    description: 'Fast, reliable, and affordable taxi services in Collingwood, Wasaga Beach, and surrounding Ontario areas. Airport transfers, local rides, and more. Call +1 705-351-0000.',
     // siteId: 'YOUR_TWITTER_SITE_ID', // Optional
     // creator: '@YOUR_TWITTER_HANDLE', // Optional
     // creatorId: 'YOUR_TWITTER_CREATOR_ID', // Optional
@@ -58,12 +58,12 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "TaxiService",
   "name": "Collingwood Regal Taxi",
-  "description": "Your trusted taxi service in Collingwood, Ontario. We offer local rides, airport transfers, and corporate travel. Call +1 705-351-0000.",
+  "description": "Your trusted taxi service in Collingwood, Wasaga Beach, and surrounding Ontario areas. We offer local rides, airport transfers, and corporate travel. Call +1 705-351-0000.",
   "telephone": "+17053510000",
   "url": WEBSITE_URL,
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Serving Collingwood and surrounding areas", // Generic as specific address might not be public facing
+    "streetAddress": "Serving Collingwood, Wasaga Beach and surrounding areas", 
     "addressLocality": "Collingwood",
     "addressRegion": "ON",
     "postalCode": "L9Y", // General postal code for Collingwood
@@ -75,12 +75,24 @@ const jsonLd = {
       "name": "Collingwood"
     },
     {
+      "@type": "City",
+      "name": "Wasaga Beach"
+    },
+    {
       "@type": "Place",
-      "name": "Blue Mountains" // Example of another served area
+      "name": "Blue Mountains"
     },
     {
       "@type": "Airport",
       "name": "Toronto Pearson International Airport"
+    },
+    {
+      "@type": "Place",
+      "name": "Simcoe County"
+    },
+    {
+      "@type": "Place",
+      "name": "Grey County"
     }
   ],
   "provider": {
@@ -95,23 +107,7 @@ const jsonLd = {
       "telephone": "+17053510000",
       "contactType": "customer support" 
     }
-  },
-  "openingHoursSpecification": [ // Assuming 24/7 service as per description
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    }
-  ]
+  }
 };
 
 

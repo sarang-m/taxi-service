@@ -4,25 +4,12 @@ import { Car } from "lucide-react";
 
 const vehicles = [
   {
-    name: "Comfortable Sedans",
-    description: "Perfect for individual travelers or couples, offering a smooth and efficient ride.",
-    imgSrc: "https://placehold.co/600x400.png",
-    alt: "Sedan taxi in Collingwood",
-    dataAiHint: "sedan car"
-  },
-  {
     name: "Spacious SUVs",
     description: "Ideal for families or groups with extra luggage, providing ample space and comfort.",
-    imgSrc: "https://placehold.co/600x400.png",
+    //imgSrc: "https://placehold.co/600x400.png",
+    imgSrc: "/taxi-car.jpg",
     alt: "SUV taxi in Collingwood",
     dataAiHint: "SUV car"
-  },
-  {
-    name: "Versatile Minivans",
-    description: "Great for larger groups or those needing accessible transportation options.",
-    imgSrc: "https://placehold.co/600x400.png",
-    alt: "Minivan taxi service Collingwood",
-    dataAiHint: "minivan car"
   },
 ];
 
@@ -39,7 +26,7 @@ export default function FleetSection() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-1 gap-8 max-w-md mx-auto">
           {vehicles.map((vehicle) => (
             <Card key={vehicle.name} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card">
               <CardHeader className="p-0">
